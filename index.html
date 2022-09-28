@@ -6,22 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figma to HTML & CSS</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div class="app">
+
+    <!-- hero -->
+    <div class="hero">
         <nav class="navbar">
             <ul class="nav-list">
                 <li class="nav-item"> <img src="assets/Darklogo.png" alt="app-logo" class="app-logo"></li>
                 <li class="nav-item">About</li>
                 <li class="nav-item">Products</li>
-                <li class="nav-item">Pricing
-                </li>
+                <li class="nav-item">Pricing</li>
                 <li class="nav-item">Blog</li>
                 <li class="nav-item">Jobs</li>
-                <li class="nav-item">More</li>
             </ul>
+
+        <!-- navbar -->
+
             <ul class="nav-list-right">
                 <li class="nav-item"><img src="/assets/google-play.png" alt="google-play" class="nav-item-image"></li>
                 <li class="nav-item"><img src="/assets/app-store.png" alt="app-store" class="nav-item-image"></li>
@@ -29,9 +36,247 @@
             <div class="menu-icon-wrapper">
                 <i class="fa fa-bars menu-icon"></i>
             </div>
-          
         </nav>
-       
+
+        <!-- hero content -->
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-content-headline">Organise projects.</h1>
+                <h1 class="hero-content-headline ">Get more done.</h1>
+                <p class="get-started-btn">Get Started</p>
+            </div>
+            <div class="phone-mockup">
+                <img src="/assets/phone-mockup.png" class="phone-mockup" alt="phone-mockup">
+            </div>
+        </div>   
     </div>
+
+    <!-- logos -->
+  
+    <div class="logo-section">
+        <img src="assets/Airbnb-Logo.png">
+        <img src="assets/Hubspot-Logo.png">
+        <img src="assets/Google-Logo.png">
+        <img src="assets/Microsoft-Logo.png">
+        <img src="assets/Walmart-Logo.png">
+        <img src="assets/FedEx-Logo.png">
+    </div>
+
+   <!-- feature -->
+    <div class="feature">
+        <div class="feature-header">
+            <h1>Tailor-made features</h1>
+            <p>Lorem ipsum is a common place holder text used to demonstrate the graphic elements of a document or visual presentation.</p>
+        </div>
+        <div class="feature-list">
+            <div class="content-one">
+                <img src="assets/feature-logo-1.png">
+                <h3>Robust workflow</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed erat nibh tristique ipsum.</p>
+            </div>
+            <div class="content-two">
+                <img src="assets/feature-logo-2.png">
+                <h3>Flexibility</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed erat nibh tristique ipsum.</p>
+            </div>
+            <div class="content-three">
+                <img src="assets/feature-logo-3.png">
+                <h3>User friendly</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed erat nibh tristique ipsum.</p>
+            </div>
+            <div class="content-four">
+                <img src="assets/feature-logo-4.png">
+                <h3>Multiple layouts</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed erat nibh tristique ipsum.</p>
+            </div>
+            <div class="content-five">
+                <img src="assets/feature-logo-5.png">
+                <h3>Better components</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed erat nibh tristique ipsum.</p>
+            </div>
+            <div class="content-six">
+                <img src="assets/feature-logo-6.png">
+                <h3>Well organised</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed erat nibh tristique ipsum.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- testimonials -->
+
+    <section class="testimonials-section">
+        <div class="testimonials-wrapper">
+            <div class="testimonials-left">
+                <h2>Real Stories from <br>Real Customers</h2>
+                <p class="get-inspired">Get inspired by these stories.</p>
+                <div class="testimonial-container hubspot-container">
+                    <img src="assets/Hubspot-Logo.png" alt="hubspot logo">
+                    <p class="testimonial-text">To quickly start my startup landing page design, I was
+                        looking for a landing page UI Kit. Landify
+                        is one of the best landing page UI kit I have come across. It’s so flexible, well organised and
+                        easily editable.</p>
+                    <p class="testimonial-name">Floyd Miles</p>
+                    <span class="testimonial-position">Vice President, GoPro</span>
+                </div>
+            </div>
+            <div class="testimonials-right">
+                <div class="testimonial-container airbnb-container">
+                    <img src="assets/Airbnb-Logo.png" alt="airbnb logo">
+                    <p class="testimonial-text">I used landify and created a landing page for my startup
+                        within a week. The Landify UI Kit is
+                        simple and highly intuitive, so anyone can use it.</p>
+                    <p class="testimonial-name">Jane Cooper</p>
+                    <span class="testimonial-position">CEO, Airbnb</span>
+                </div>
+                <div class="testimonial-container bookmyshow-container" data-aos="flip-up">
+                    <img src="assets/BookMyShow-Logo.png" alt="bookmyshow logo">
+                    <p class="testimonial-text">Landify saved our time in designing my company page.</p>
+                    <p class="testimonial-name">Kristin Watson</p>
+                    <span class="testimonial-position">Co-Founder, BookMyShow</span>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+        <!-- stats-->
+    <div class="stats-container">
+        <div class="stats-top-container">
+            <div class="stats-left">
+                <h1>Our 18 years of achievements</h1>
+                <p>With our super powers we have reached this</p>
+            </div>
+            <div class="stats-right">
+                <div class="stats-info">
+                    <div class="stats-icon">
+                        <img src="/assets/feature-logo-1.png">
+                    </div>
+                    <div class="stats-numbers">
+                        <p>10.000+</p>
+                        <p>Downloads per day</p>
+                    </div>
+                </div>
+                <div class="stats-info">
+                    <div class="stats-icon">
+                        <img src="/assets/feature-logo-4.png">
+                    </div>
+                    <div class="stats-numbers">
+                        <p>2 Million</p>
+                        <p>Users</p>
+                    </div>
+                </div>
+                <div class="stats-info">
+                    <div class="stats-icon">
+                        <img src="/assets/feature-logo-5.png">
+                    </div>
+                    <div class="stats-numbers">
+                        <p>500+</p>
+                        <p>Clients</p>
+                    </div>
+                </div>
+                <div class="stats-info">
+                    <div class="stats-icon">
+                        <img src="/assets/feature-logo-7.png">
+                    </div>
+                    <div class="stats-numbers">
+                        <p>140</p>
+                        <p>Countries</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        
+                <!-- feature single 5 -->
+
+        <div class="feature-single-five">
+            <div class="feature-five-phone">
+                <img src="assets/phone-half.png">
+            </div>
+                
+            <div class="feature-single-five-text">
+                <h1>Headline</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.</p>
+                <div class="get-started-text">
+                    <p>Get started</p>
+                    <p>-></p>
+                </div>
+            </div>     
+        </div>
+    </div>
+
+
+                
+        <!-- feature single 6 -->
+
+    <div class="feature-single-six-container">
+        <div class="feature-single-six-text">
+            <h1>Enter the world of all fashion trends</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis scelerisque at quam congue posuere libero in sit quam. Consequat, scelerisque non tincidunt sit lectus senectus.</p>
+        </div>
+        <div class="feature-single-six-img">
+            <img src="assets/feature-six-img.png">
+        </div>
+    </div>
+
+        <!-- footer -->
+
+    <div class="footer-container">
+        <!-- CTA -->
+
+        <div class="cta-container">
+            <div class="cta-left">
+                <div class="cta-text">
+                    <h1>Manage your projects from your mobile</h1>
+                    <p>Download the app to manage your projects, keep track of the progress and complete tasks without procastinating. Stay on track and complete on time!</p>
+                </div>
+
+                <div class="google-play-and-app-store">
+                    <p>Get the App</p>
+                    <img src="assets/google-play.png">
+                    <img src="assets/app-store.png">
+                </div>
+            </div>
+            <div class="cta-right">
+                <div class="phone-mockup-three">
+                    <img src="/assets/Phone-mockup-3.png">
+                </div>
+                <div class="phone-mockup-four">
+                    <img src="/assets/Phone-Mockup-4.png">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="/assets/footer-log.png">
+                </div>
+                <div class="links-first-row">
+                    <p>Download Now</p>
+                    <p>License</p>
+                </div>
+                <div class="links-second-row">
+                    <p>About</p>
+                    <p>Features</p>
+                    <p>Pricing</p>
+                    <p>Careers</p>
+                    <p>Help</p>
+                    <p>Privacy Policy</p>
+                </div>
+                <div class="all-rights-reserved">
+                    <p>© 2020 Landify UI Kit. All rights reserved</p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p>Get the App</p>
+                <img src="assets/app-store.png">
+                <img src="assets/google-play.png" alt="">
+            </div>
+        </div>
+      
+    </div> 
+                 
+            
+     
+   
 </body>
 </html>
