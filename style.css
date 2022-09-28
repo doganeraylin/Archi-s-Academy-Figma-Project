@@ -8,10 +8,10 @@
 
 /* navbar */
 .navbar {
-    height: 72px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 1em;
     max-width: 1440px;
 }
 
@@ -131,7 +131,7 @@
 
 .feature-header h1 {
     font-weight: 800;
-    font-size: 46px;
+    font-size: 3rem;
     line-height: 64px;
     text-align: center;
     color: rgba(0, 0, 0, 1);
@@ -357,15 +357,13 @@
    display: flex;
    justify-content: center;
    background: #F1E4FF;
-   width: 540px;
-   height: 540px;
+
 }
 
 
 .feature-single-five-text {
     max-width: 40%;
 
-   
 }
 
 .feature-single-five-text h1 {
@@ -559,46 +557,206 @@
 }
 
 
-
-
-@media (max-width: 992px) {
-    .app-logo {
-        height: 25px;
-    }
-    .nav-list {
-        gap: 20px;
-    }
-    .nav-item {
-        font-size: 12px;
-        line-height: 16px;
-    }
-    .nav-item-image {
-        height: 30px;
-    }
-}
-
-@media (max-width: 768px) {
-    .app-logo {
-        height: 20px;
-    }
-    .nav-list {
-        gap: 18px;
-    }
-    .nav-item {
-        font-size: 10px;
-        line-height: 14px;
-    } 
-    .nav-item-image {
-        height: 25px;
-    }
-}
+/*  media queries */
 
 @media (max-width: 600px) {
+
+    /* navbar */
     .nav-list .nav-item:not(:first-child),
     .nav-list-right .nav-item {
         display: none;
+       
     }
     .menu-icon-wrapper {
         display: block;
     }
-}
+
+    /* hero */
+    .hero-content {
+        flex-direction: column;
+        margin: 0;
+        padding: 0 0.75em;
+    }
+    .hero-content-headline {
+       font-size: 3rem;
+       line-height: 70px;
+       
+    }
+    .get-started-btn {
+        width: 40%;
+        padding: 0.50em;
+    }
+    .phone-mockup {
+        margin: 2em auto;
+    }
+    .logo-section {
+        width: 10%;
+        margin: 0 auto;
+        gap: 1em;
+        justify-content: space-around;
+    }
+
+    /* feature */
+    .feature-header {
+        width: 80%;
+        margin-top: 3em;
+    }
+    .feature-header h1 {
+        font-size: 1.5rem;
+    }
+    .feature-header p {
+        font-size: .75rem;
+    }
+
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* testimonials */
+
+    .testimonials-wrapper {
+        flex-direction: column;
+    }
+    .airbnb-container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    /* stats */
+
+    .stats-top-container {
+        flex-direction: column;
+    }
+    .stats-top-container h1 {
+        flex-direction: column;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .stats-left {
+        width: 100%;
+    }
+    .stats-right {
+        grid-template-columns: 1fr 1fr;
+        margin: 1em auto;
+    }
+
+    .stats-right p {
+        font-size: 1rem;
+    }
+
+    /* feature 5 */
+
+    .feature-single-five {
+        flex-direction: column;
+        margin: 2em 1em;
+    }
+    
+ 
+    .feature-single-five-text {
+        max-width: 90%;
+        margin-top: 2em;
+    
+    }
+
+    .feature-single-five-text h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .feature-single-five-text p {
+        font-size: 1rem;
+    }
+    
+    /* feature 6 */
+    
+    .feature-single-six-text {
+        flex-direction: column;
+        max-width: 80%;
+    }
+    
+    .feature-single-six-text h1 {
+        max-width: 100%;
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    
+    .feature-single-six-text p {
+        max-width: 100%;
+        font-size: 1rem;
+        line-height: 28px;
+        margin-top: 1em;
+    }
+    
+    .feature-single-six-img img{
+        width: 80%;
+        margin: 1.5em 0 3em;
+    }
+
+    /* cta */
+    
+    .cta-container {
+        flex-direction: column;
+        width:100%;
+        height: 75%;
+        margin-top: 4em;
+    }
+    
+  
+    .cta-left{
+        width: 100%;
+        margin: 2em auto;
+        padding: 1.5em;
+    }
+   
+    .cta-text h1 {
+        font-size: 1.5rem;
+        line-height: 30px;
+        width: 100%;
+        padding-top: 2.5em;
+    }
+    
+    .cta-text p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .cta-right img {
+        display: none;
+    }
+
+    /* footer */
+
+    .footer-container {
+        margin-top: 4em;
+    }
+
+    .links-first-row,
+    .links-second-row {
+        order: 0;
+        margin-top: 2em;
+        font-size: 14px;
+        line-height: 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-right img,
+    .footer-right p {
+        display: none;
+    }
+
+  
+
+
+
+
+        
+
+        
+
+
+
